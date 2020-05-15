@@ -9,7 +9,7 @@ public class MovJugador : MonoBehaviour
 	private Camera mainCamera;
 
 	[SerializeField]
-    public float speed = 6.0f;
+    public float speed = 3.0f;
 	[SerializeField]
     public float alturaSalto = 8.0f;
 	[SerializeField]
@@ -45,13 +45,13 @@ public class MovJugador : MonoBehaviour
 		//Movimiento al caminar
 		if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) {
 			movementType = 1;
-			speed = 3.0f;
+			speed = 1.5f;
 		}
 
 		//Movimiento al correr
 		if (Input.GetKey(KeyCode.LeftShift)) {
 			movementType = 3;
-			speed = 5.0f;
+			speed = 3.0f;
 		}
 
 		if (jugador.isGrounded)
