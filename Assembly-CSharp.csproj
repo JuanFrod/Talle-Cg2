@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scrip\Clima.cs" />
      <Compile Include="Assets\Scrip\MainMenu.cs" />
      <Compile Include="Assets\Scrip\MovJugador.cs" />
+     <Compile Include="Assets\Scrip\Posiciones.cs" />
      <Compile Include="Assets\Scrip\Rayos.cs" />
      <Compile Include="Assets\Scrip\timer.cs" />
      <None Include="Assets\ui\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
