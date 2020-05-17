@@ -569,6 +569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1250413825}
+  palm: {fileID: 1370983040}
 --- !u!1 &201903376
 GameObject:
   m_ObjectHideFlags: 0
@@ -6420,6 +6421,12 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1370983040 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 122562, guid: 13f6097cdfae79d44acca4175298212a,
+    type: 3}
+  m_PrefabInstance: {fileID: 151420920}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1391912412
 GameObject:
   m_ObjectHideFlags: 0
