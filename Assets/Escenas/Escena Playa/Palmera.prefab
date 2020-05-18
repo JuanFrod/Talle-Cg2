@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5983421530939121987}
   - component: {fileID: 5983421530937996465}
   m_Layer: 0
-  m_Name: Palmera
+  m_Name: Palmera(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

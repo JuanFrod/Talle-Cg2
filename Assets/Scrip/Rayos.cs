@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using TMPro;
+using System.Runtime.InteropServices;
 
 public class Rayos : MonoBehaviour
 {
@@ -9,12 +11,16 @@ public class Rayos : MonoBehaviour
     public Camera cam;
     [SerializeField]
     public GameObject palm;
-
+    [SerializeField]
+    private TextMeshProUGUI Text;
+   
     string name1;
+    Vector3 pos;
     void Start()
     {
-        
+        Text = FindObjectOfType<TextMeshProUGUI>();
         cam = GetComponent<Camera>();
+        
     }
 
     void Update()
@@ -31,13 +37,18 @@ public class Rayos : MonoBehaviour
         if (Physics.Raycast(rayCast, out hit))
         {
 
-                
-            //Check which tag is hit
-            if (hit.collider.name == name1)
+                print(palm.name);
+                print(hit.collider.name);
+                //Check which tag is hit
+                if (hit.collider.name == name1)
             {
+                    
+                    pos = hit.transform.position;
                     print(hit.collider.name);
-                    print(hit.collider.transform.position);
+                    string post = pos.ToString();
+                    Text.text = "Hola soy palmera y estoy en: " + post.ToString();
             }
+                
         }
     }
   }

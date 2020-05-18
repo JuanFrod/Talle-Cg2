@@ -76,7 +76,6 @@ public class CargarPalmeras : MonoBehaviour
                 while (linea != null)
                 {
                     PosPalmera = StringToVector3(linea);
-                    Debug.Log(PosPalmera);
                     PosicionesPalmeras.AddLast(PosPalmera);
                     linea = leer.ReadLine();
                 }
