@@ -2,8 +2,6 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.3.7f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
-    <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8CA7E489-C599-2A74-8BAC-0B6FFAACB1CD}</ProjectGuid>
+    <ProjectGuid>{89e4a78c-99c5-742a-8bac-0b6ffaacb1cd}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -47,14 +45,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="UnityEngine">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.3.7f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.3.7f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
      <Compile Include="Assets\Escenas\Escena Playa\Entorno Playa\Agua\Water\Water\Scripts\Displace.cs" />
      <Compile Include="Assets\Escenas\Escena Playa\Entorno Playa\Agua\Water\Water\Scripts\GerstnerDisplace.cs" />
      <Compile Include="Assets\Escenas\Escena Playa\Entorno Playa\Agua\Water\Water\Scripts\MeshContainer.cs" />
@@ -63,6 +53,7 @@
      <Compile Include="Assets\Escenas\Escena Playa\Entorno Playa\Agua\Water\Water\Scripts\Water.cs" />
      <Compile Include="Assets\Escenas\Escena Playa\Entorno Playa\Agua\Water\Water\Scripts\WaterBase.cs" />
      <Compile Include="Assets\Escenas\Escena Playa\Entorno Playa\Agua\Water\Water\Scripts\WaterTile.cs" />
+     <Compile Include="Assets\Scrip\CargarPalmeras.cs" />
      <Compile Include="Assets\Scrip\Clima.cs" />
      <Compile Include="Assets\Scrip\MainMenu.cs" />
      <Compile Include="Assets\Scrip\MovJugador.cs" />
@@ -86,38 +77,14 @@
      <None Include="Assets\ui\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\Escenas\Escena Playa\Entorno Playa\Agua\Water\Water\Shaders\FXWaterPro.shader" />
      <None Include="Assets\ui\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <None Include="Assets\Escenas\BlackantMasterStudio\The Shed\Shed_Anims.txt" />
+     <None Include="Assets\Escenas\Escena Bosque\BlackantMasterStudio\The Shed\Shed_Anims.txt" />
      <None Include="Assets\ui\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\ui\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\ui\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\ui\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\ui\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/Administrador/Documents/GitHub/Talle-Cg2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/Administrador/Documents/GitHub/Talle-Cg2/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/Administrador/Documents/GitHub/Talle-Cg2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Administrador/Documents/GitHub/Talle-Cg2/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/Administrador/Documents/GitHub/Talle-Cg2/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/Administrador/Documents/GitHub/Talle-Cg2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/Administrador/Documents/GitHub/Talle-Cg2/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Administrador/Documents/GitHub/Talle-Cg2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Administrador/Documents/GitHub/Talle-Cg2/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <Reference Include="UnityEngine">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -295,6 +262,15 @@
  </Reference>
  <Reference Include="UnityEngine.XRModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -642,8 +618,46 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Unity.Timeline.Editor.csproj">
+      <Project>{6c7f3306-3864-30dc-4c30-4523a5ff7a6d}</Project>
+      <Name>Unity.Timeline.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VSCode.Editor.csproj">
+      <Project>{44bc452c-e652-43e3-1167-d1e2b1396881}</Project>
+      <Name>Unity.VSCode.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
+      <Project>{aba68428-93f2-a6d6-1faa-11b39c2f3fa7}</Project>
+      <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{165cb142-e138-682d-45ef-c537d799840f}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.csproj">
+      <Project>{82ab3e23-433d-77ea-8f5a-eb3793a47643}</Project>
+      <Name>Unity.Timeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.CollabProxy.Editor.csproj">
+      <Project>{ab8975b7-13ef-c52e-b89d-8060db7cf947}</Project>
+      <Name>Unity.CollabProxy.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Rider.Editor.csproj">
+      <Project>{12dda9b4-afa1-8938-6ef3-f1c3801ea411}</Project>
+      <Name>Unity.Rider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{75fbab16-0e15-f54d-a88c-2a81e7d1d870}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{4e63692c-c175-2832-63a4-d14ce17f0a30}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
