@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Escenas/Escena Playa/Escena Playa.unity
     guid: b368628245db96940a14d9f113b5d6bb
+  - enabled: 1
+    path: Assets/Escenas/Escena Bosque/Escena Bosque.unity
+    guid: 3cca0862880a9cb43b2c7a0372b801d3
   m_configObjects: {}
