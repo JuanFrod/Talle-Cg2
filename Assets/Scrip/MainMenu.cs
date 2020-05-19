@@ -7,23 +7,16 @@ using System.Collections.Generic;
 public class MainMenu : MonoBehaviour
 {
 
-    public void Jugar()
+    public void Bosque()
     {
-        SceneManager.LoadScene("Escena 1");
+        SceneManager.LoadScene("Escena Bosque");
     }
 
-    public void Instrucciones()
+    public void Playa()
     {
-        SceneManager.LoadScene("Instrucciones");
+        SceneManager.LoadScene("Escena Playa");
     }
 
-    public void Atras()
-    {
-        SceneManager.LoadScene("MainMenu");
-    }
-
-    public void Salir()
-    {
-        Application.Quit();
-    }
+   
+    
  }

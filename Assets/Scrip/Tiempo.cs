@@ -9,8 +9,8 @@ public class Tiempo : MonoBehaviour
     public Material skyBox1;
     
     public Material skyBox2;
-    int contador = 0;
-    Boolean change = false;
+   
+    
     public ParticleSystem ps1;
     void Start()
     {
@@ -18,36 +18,26 @@ public class Tiempo : MonoBehaviour
         ps1.Stop();
     }
 
-    
-
-
-    void Update()
+    void Dia()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (contador == 0)
-            {
-                if (change == false)
-                
-                    RenderSettings.skybox = skyBox2;
-                    contador = 1;
-                    change = true;
-                print("Se a cambiado el clima");
-                ps1.Play();
-            }
-            else
-            {
 
-                if (change == true)
-                RenderSettings.skybox = skyBox1;
-                contador = 0;
-                change = false;
-                print("Se a cambiado el clima");
-                ps1.Stop();
-            }
 
-        }
+        RenderSettings.skybox = skyBox2;
+        print("10 am");
+        ps1.Play();
+
+
     }
 
+    void Noche()
+    {
+
+
+        RenderSettings.skybox = skyBox1;
+        print("6 PM");
+        ps1.Stop();
+
+
+    }
     
 }
